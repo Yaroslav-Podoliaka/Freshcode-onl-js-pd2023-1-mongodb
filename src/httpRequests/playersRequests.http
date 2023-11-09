@@ -1,0 +1,26 @@
+GET http://localhost:5000/api/players HTTP/1.1
+
+###
+
+GET http://localhost:5000/api/players/65494e015c33da3aa3e0c147 HTTP/1.1
+
+###
+
+POST http://localhost:5000/api/players HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Yan",
+    "lastName": "Braverman",
+    "age": 50,
+    "address": {
+      "country": "Ukraine",
+      "city": "Dnipro",
+      "zipcode": 49043
+    },
+    "brands": [
+      "Donic",
+      "TSP",
+      "Spinlord"
+    ]
+}
