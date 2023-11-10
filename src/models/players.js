@@ -7,12 +7,12 @@ const playerSchema = new Schema(
     firstName: {
       type: String,
       required: true,
-      match: /^[A-Za-z]\w*/g,
+      match: /^[A-Z]\w*/g,
     },
     lastName: {
       type: String,
       required: true,
-      match: /^[A-Za-z]\w*/g,
+      match: /^[A-Z]\w*/g,
     },
     age: {
       type: Number,

@@ -27,7 +27,7 @@ const createRoles = async () => {
   const roles = [
     { role: "Admin", email: "admin@example.com" },
     { role: "Moderator" },
-    { role: "User" },
+    { role: "User", email: "user@example.com"},
   ]
   await Role.create(roles);
 };
